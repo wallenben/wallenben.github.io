@@ -1,6 +1,15 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery, graphql } from "gatsby"
 const Layout = ({ children }) => {
+    const data = useStaticQuery(graphql`
+    query {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
   return (
     <>
       <div className="flex flex-col min-h-screen bg-gray-200 dark:bg-gray-600">
