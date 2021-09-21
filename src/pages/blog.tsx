@@ -1,17 +1,24 @@
+import { graphql } from "gatsby"
 import React from "react"
+import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from "../components/Layout" 
-const IndexPage = () => {
+const IndexPage = ({ data }) => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
         <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2">
-            <h1 className="px-4 pt-5 text-2xl text-left bg-purple-500 dark:bg-green-300 font-bold sm:text-3xl">
-              same but the blog page
-            </h1>
-            <p className="px-4 mt-8 text-lg text-gray-700 dark:text-white sm:mt-8">
-              crazy
-            </p> 
+          <ul>
+          {
+        data.allMdx.nodes.map((node) => (
+          <article key={node.id}>
+            <h2>{node.frontmatter.title}</h2>
+            <p>Posted: {node.frontmatter.date}</p>
+            <MDXRenderer>{node.body}</MDXRenderer>
+          </article>
+        ))
+      }
+      </ul>
           </div>
          
         </div>
@@ -19,4 +26,18 @@ const IndexPage = () => {
     </Layout>
   )
 }
+export const query = graphql`
+  query {
+    allMdx(sort: {fields: frontmatter___date, order: DESC}) {
+      nodes {
+        frontmatter {
+          date(formatString: "MMMM D, YYYY")
+          title
+        }
+        id
+        body
+      }
+    }
+  }
+`
 export default IndexPage;
