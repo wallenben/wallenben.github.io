@@ -8,9 +8,9 @@
   
  - [x] Navbar using gatsby link API
   
- - [ ] exploration of graphQL
+ - [x] exploration of graphQL
   
- - [ ] Blog implementation with MDX
+ - [x] Blog implementation with MDX
   
  - [ ] Resume page completion
   
@@ -21,6 +21,6 @@
   <h5>Stretch:</h5>
 <h6>
   
- - [ ] Implement Galatic tab for project upon completion
+ - [ ] Implement Galatic d3.js tab for project upon completion
  - [ ] Add project tab for work experience, contribution
   </h6>
