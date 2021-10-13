@@ -1,5 +1,6 @@
 import React from "react"
 import Layout from "../components/Layout" 
+import { StaticImage } from "gatsby-plugin-image"
 const IndexPage = () => {
   return (
     <Layout>
@@ -7,11 +8,9 @@ const IndexPage = () => {
         <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2">
             <h1 className="px-4 pt-5 text-2xl text-left bg-purple-500 dark:bg-green-300 font-bold sm:text-3xl">
-              resume time
+              Resume
             </h1>
-            <p className="px-4 mt-8 text-lg text-gray-700 dark:text-white sm:mt-8">
-              immaculate design 
-            </p> 
+            <StaticImage src="../images/resume.png" alt="A dinosaur" />
           </div>
          
         </div>
