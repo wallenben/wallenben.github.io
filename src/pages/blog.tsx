@@ -5,8 +5,8 @@ import Layout from "../components/Layout"
 const IndexPage = ({ data }) => {
   return (
     <Layout>
-      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
-        <div className="sm:flex sm:flex-row-reverse sm:items-center">
+      <main className="max-w-3xl flex-grow mx-auto flex flex-col justify-around bg-gray-50 rounded-xl p-6 m-3">
+      <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2">
           <ul>
           {
