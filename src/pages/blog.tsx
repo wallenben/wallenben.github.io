@@ -12,10 +12,9 @@ const IndexPage = ({ data }) => {
           {
         data.allMdx.nodes.map((node) => (
           <article key={node.id}>
-            <h2>{node.frontmatter.title}</h2>
-            <p>Posted: {node.frontmatter.date}</p>
-            <MDXRenderer>{node.body}</MDXRenderer>
-          </article>
+            <h1 className="text-2xl">{node.frontmatter.title}</h1>
+            <p className="text-base">Posted: {node.frontmatter.date}</p>
+            {/**<MDXRenderer>{node.body}</MDXRenderer> **/}</article>
         ))
       }
       </ul>
