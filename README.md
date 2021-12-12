@@ -12,15 +12,16 @@
   
  - [x] Blog implementation with MDX
   
- - [ ] Resume page completion
+ - [x] Resume page completion
   
- - [ ] Flesh out 'about me'
+ - [x] Flesh out 'about me'
  
  - [ ] Social media hyperlinks, verify UI design
   </h6>
   <h5>Stretch:</h5>
 <h6>
   
- - [ ] Implement Galatic d3.js tab for project upon completion
- - [ ] Add project tab for work experience, contribution
+ - [ ] Implement Galatic tab for project upon completion
+    - Galactic development now underway
+ - [x] Add project tab for work experience, contribution
   </h6>
