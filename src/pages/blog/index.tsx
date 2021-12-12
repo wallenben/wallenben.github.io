@@ -1,20 +1,23 @@
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import React from "react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
-import Layout from "../components/Layout" 
+import Layout from "../../components/Layout" 
 const IndexPage = ({ data }) => {
   return (
     <Layout>
       <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
         <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2">
-          <ul>
+          <ul className="p-8">
           {
-        data.allMdx.nodes.map((node) => (
+        data.allMdx.nodes.map(node => (
           <article key={node.id}>
-            <h2>{node.frontmatter.title}</h2>
+            <h2>
+              <Link className="text-green-300" to={`/blog/${node.slug}`}>
+                {node.frontmatter.title}
+              </Link>
+            </h2>
             <p>Posted: {node.frontmatter.date}</p>
-            <MDXRenderer>{node.body}</MDXRenderer>
           </article>
         ))
       }
@@ -35,6 +38,7 @@ export const query = graphql`
           title
         }
         id
+        slug
         body
       }
     }
