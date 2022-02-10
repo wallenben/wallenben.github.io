@@ -16,12 +16,13 @@
   
  - [x] Flesh out 'about me'
  
- - [ ] Social media hyperlinks, verify UI design
+ - [x] verify UI design
+
+ - [ ] add linkedin/etc somewhere (potentially mainpage)?
   </h6>
   <h5>Stretch:</h5>
 <h6>
   
- - [ ] Implement Galatic tab for project upon completion
-    - Galactic development now underway
+ - [ ] GBC blogpost
  - [x] Add project tab for work experience, contribution
   </h6>

@@ -5,16 +5,21 @@ import Layout from "../../components/Layout"
 const MDXPage = ({ data }) => {
   return (
     <Layout>
-      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around bg-gray-50 dark:bg-gray-700 rounded-xl p-6 m-3">
-        <div className="sm:flex sm:flex-row-reverse sm:items-center dark:text-white">
-          <div className="sm:px-2">
-            <p>{data.mdx.frontmatter.date}</p>
+      <main className="max-w-4xl flex-grow  mx-auto flex flex-col justify-around bg-gray-50 dark:bg-gray-700 text-green-600 dark:text-green-300 rounded-xl p-6 m-3">
+      <div className="flex-grow 0">
+      <h1>{data.mdx.frontmatter.title}</h1>
+      <h3 className="text-sm text-green-400">{data.mdx.frontmatter.date}</h3>
+      <br />
+      <div className="  sm:items-center text-gray-700 dark:text-white flex-grow ">
+          <div className="sm:px-7">
             <MDXRenderer>
               {data.mdx.body}
             </MDXRenderer>
           </div>
 
         </div>
+      </div>
+       
       </main>
     </Layout>
   )
