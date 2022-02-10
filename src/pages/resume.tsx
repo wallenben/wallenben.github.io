@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
-import { Document, Page } from "react-pdf"
 import { StaticImage } from "gatsby-plugin-image"
+import { Link } from "gatsby"
 const ResumePage = () => {
   return (
     <Layout>
@@ -9,11 +9,11 @@ const ResumePage = () => {
         <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2"></div>
           <div>
+            <Link to="./Resume.pdf">
               <StaticImage src="../images/resume.png" alt="Click to download." />
+            </Link>
           </div>
         </div>
-
-
       </main>
 
     </Layout>

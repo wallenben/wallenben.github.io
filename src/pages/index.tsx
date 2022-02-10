@@ -10,8 +10,9 @@ const IndexPage = () => {
               Welcome.
             </h1>
             <p className="px-4 mt-8 text-lg text-gray-700 dark:text-white sm:mt-8">
-              This website is continously being added on to. In the interim, feel free to
-              click on various links through the navbar above.
+            I enjoy asking questions, and answering them with creative solutions using technology.
+            I enjoy pushing the boundaries of my knowledge of technology by working on passion projects - ranging from decompiling binaries,
+             to website and application creation.
             </p> 
           </div>
          

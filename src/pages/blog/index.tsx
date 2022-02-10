@@ -13,7 +13,7 @@ const BlogIndexPage = ({ data }) => {
         data.allMdx.nodes.map(node => (
           <article key={node.id}>
             <h2>
-              <Link className="text-green-300" to={`/blog/${node.slug}`}>
+              <Link className="text-green-500 dark:text-green-300" to={`/blog/${node.slug}`}>
                 {node.frontmatter.title}
               </Link>
             </h2>
