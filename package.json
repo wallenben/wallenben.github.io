@@ -1,8 +1,8 @@
 {
-  "name": "persona-site-three",
+  "name": "supersite-dx",
   "version": "1.0.0",
   "private": true,
-  "description": "persona site three",
+  "description": "code!",
   "author": "ben",
   "keywords": [
     "gatsby"
@@ -12,11 +12,13 @@
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
-    "clean": "gatsby clean"
+    "clean": "gatsby clean",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
   },
   "dependencies": {
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "canvas": "^2.9.0",
     "gatsby": "^3.10.2",
     "gatsby-plugin-image": "^1.10.1",
     "gatsby-plugin-mdx": "^2.14.0",
@@ -26,12 +28,13 @@
     "gatsby-transformer-sharp": "^3.10.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-pdf": "^5.5.0",
+    "react-pdf": "5.2.0",
     "recharts": "^2.1.6"
   },
   "devDependencies": {
     "autoprefixer": "^10.3.1",
     "gatsby-plugin-postcss": "^4.10.0",
+    "gh-pages": "^3.2.3",
     "postcss": "^8.3.6",
     "tailwindcss": "^2.2.7"
   }

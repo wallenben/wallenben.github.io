@@ -2,11 +2,11 @@ import { graphql } from "gatsby"
 import React from "react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from "../../components/Layout"
-const IndexPage = ({ data }) => {
+const MDXPage = ({ data }) => {
   return (
     <Layout>
-      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
-        <div className="sm:flex sm:flex-row-reverse sm:items-center">
+      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around bg-gray-50 dark:bg-gray-700 rounded-xl p-6 m-3">
+        <div className="sm:flex sm:flex-row-reverse sm:items-center dark:text-white">
           <div className="sm:px-2">
             <p>{data.mdx.frontmatter.date}</p>
             <MDXRenderer>
@@ -30,4 +30,4 @@ export const query = graphql`
     }
   }
 `
-export default IndexPage;
+export default MDXPage;

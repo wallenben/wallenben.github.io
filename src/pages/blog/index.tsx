@@ -2,10 +2,10 @@ import { graphql, Link } from "gatsby"
 import React from "react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from "../../components/Layout" 
-const IndexPage = ({ data }) => {
+const BlogIndexPage = ({ data }) => {
   return (
     <Layout>
-      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around">
+      <main className="max-w-4xl flex-grow mx-auto flex flex-col justify-around bg-gray-50 dark:bg-gray-700 rounded-xl p-6 m-3">
         <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2">
           <ul className="p-8">
@@ -44,4 +44,4 @@ export const query = graphql`
     }
   }
 `
-export default IndexPage;
+export default BlogIndexPage;
