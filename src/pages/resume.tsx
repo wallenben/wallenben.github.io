@@ -9,7 +9,7 @@ const ResumePage = () => {
         <div className="sm:flex sm:flex-row-reverse sm:items-center">
           <div className="sm:px-2"></div>
           <div>
-            <Link to="./Resume.pdf">
+            <Link to={'../public/Resume.pdf'}>
               <StaticImage src="../images/resume.png" alt="Click to download." />
             </Link>
           </div>
