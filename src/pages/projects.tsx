@@ -13,7 +13,7 @@ const ProjectsPage = () => {
             By constantly creating new applications and contributing solutions, I refine my programming skills every day.
             Examples of my work can be found on <a className="text-green-500 dark:text-green-200" href="https://github.com/wallenben">github</a>. More prominent projects will be featured here! </p> 
             <p className="px-4 mt-8 text-lg text-gray-700 dark:text-white sm:mt-8">
-              Currently, most of my time is spent working on <a className="text-green-500 dark:text-green-200" href="https://github.com/wallenben/gb-C">GB-C</a>, a Gameboy Emulator written in C++. Previously, I have created a lightweight library management system that is viewable <a className="text-green-500 dark:text-green-200" href="https://github.com/wallenben/Webdev/tree/main/finalproj">here</a>. <br /> <br /> 
+              Currently, most of my time is spent working on <a className="text-green-500 dark:text-green-200" href="https://github.com/wallenben/gbJS">GBJS</a>, a Gameboy Emulator written in TypeScript. Previously, I have created a lightweight library management system that is viewable <a className="text-green-500 dark:text-green-200" href="https://github.com/wallenben/Webdev/tree/main/finalproj">here</a>. <br /> <br /> 
               Additionally, I have continually worked with the <a className="text-green-500 dark:text-green-200" href="https://momentum-mod.org/">Momentum Mod</a> team on the web portions of the "Momentum Mod" videogame. 
               <br /> <br />
 
