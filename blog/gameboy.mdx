@@ -1,9 +1,21 @@
 ---
 title: "Gameboy Emulation & System architecture analysis"
-featuredImage: /images/pupperino.png
 date: "2021-12-12"
 ---
+Recently, I have started work on a Gameboy (DMG-101) emulator to get a better understanding of system architecture and the process of software emulation. It's reasonable to assume this is the most difficult project I have taken on, but is easily one of my favorite projects I have ever worked on!  
 
-I am working on a gameboy emulator!
-As I develop my program, I will update this blogpost.
+  
+Because I am giving a talk on this project at UW - Madison, I intend to document a fair portion of my development lifecycle for posterity, and hopefully to incentivize more emulation development in the future.  
+
+***Design choices in emulation***  
+
+One of the biggest hurdles I faced early on was the quientessential design decision of what language to use for this emulator project. Initially, I figured writing the emulator in C would be ideal - I could use a graphics library like [SDL](https://www.libsdl.org/) to display the emulator effectively,  but after initial testing it was very apparent that the lack of the std library from C++ would add another layer of "research abstraction": I would be researching the GB archietecture, SDL, and C itself -- which is a bit too much for me to tackle in one project.
+
+Because C was out of the question, my natural inclination was to check out C++ - most of the fun of C with nice enhancements to streamline development. While I think C++ would be a fine choice for emulation development, I ended up deciding to use JavaScript (TypeScript) instead to take advantage of various nicities of JS. 
+
+ - Graphics are very easy to display with JS and `<canvas>` tags 
+ - JSON is a godsend for various architectural complexities e.g. registers and flags in the CPU
+ - I would like to become more familar with JS for web development purposes
+ 
+
 ![how do this work](./images/pupperino.jpeg)
