@@ -17,7 +17,7 @@ const BlogIndexPage = ({ data }) => {
                 {node.frontmatter.title}
               </Link>
             </h2>
-            <p className="dark:text-white">Posted: {node.frontmatter.date}</p>
+            <p>Posted: {node.frontmatter.date}</p>
           </article>
         ))
       }
