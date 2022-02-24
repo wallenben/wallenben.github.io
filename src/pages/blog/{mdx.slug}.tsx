@@ -2,7 +2,6 @@ import { graphql } from "gatsby"
 import React from "react"
 import { MDXRenderer } from 'gatsby-plugin-mdx'
 import Layout from "../../components/Layout"
-import "github-markdown-css/github-markdown.css"
 const MDXPage = ({ data }) => {
   return (
     <Layout>
@@ -13,7 +12,7 @@ const MDXPage = ({ data }) => {
           <br />
           <article className="prose lg:prose-xl">
             <div className="sm:items-center text-gray-700 dark:text-white flex-grow ">
-              <div className="markdown-body sm:px-7">
+              <div className=" sm:px-7">
                 <MDXRenderer>
                   {data.mdx.body}
                 </MDXRenderer>
